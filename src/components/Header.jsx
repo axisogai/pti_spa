@@ -5,7 +5,7 @@ function Header() {
     <div>
       <h1 className="Header">Header</h1>
 
-      <img src={"/images/logo.png"} width="10" height="5" />
+      {/* <img src="/" width="10" height="5" /> */}
     </div>
   );
 }
