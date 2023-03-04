@@ -4,7 +4,7 @@ export function Card({ card }) {
   return (
     <div className="col">
       <div className="card m-auto text-bg-secondary border-light Card">
-        <a href="#">
+        <a href="\#">
           <img src={card.imagem} className="card-img-top p-4" alt="" />
           <div className="card-body text-light">
             <h5 className="card-title">{card.titulo}</h5>
