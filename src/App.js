@@ -1,32 +1,39 @@
+// import { useState } from "react";
 import "./App.css";
-import Articles from "./components/Articles";
-import { Footer } from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.css';
+import Card from "./components/Card";
+import Footer  from "./components/Footer";
 import Header from "./components/Header";
 
 function App() {
-  const artigo1 = {
-    titulo: "titulo 1",
-    texto: "sdsadas das das dasdsa da",
+  const card1 = {
+    imagem: "https://guiadohamburguer.com/wp-content/uploads/2015/05/instagram-ezequiel-2517.jpg",
+    titulo: "X-Infarto",
+    preco: "30,99"
   };
-  const artigo2 = {
-    titulo: "titulo 2",
-    texto: "sdsadas das das dasdsa da",
-  };
-  const artigo3 = {
-    titulo: "titulo 3",
-    texto: "sdsadas das das dasdsa da",
-  };
+  const card2 = {
+    imagem: "https://assets.almanaquesos.com/wp-content/uploads/2018/04/burger_pizza_1_almanaquesos1-1000x570.jpg",
+    titulo: "Mamma Mia! Sono morto",
+    preco: "40,99"
+
+    };
+  const card3 = {
+    imagem: "https://s2.glbimg.com/ecNBtjgGE20cR0GXR8ig9wawrrU=/0x0:871x441/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2019/v/b/gYgsB1SuGyajHosEdQRA/545454.png",
+    titulo: "Carrocinha",
+    preco: "35,99"
+
+    };
   return (
     <div className="App">
       <Header />
-      <div className="container my-5">
-        <div className="row row-cols g-4 p-4">
-          <Articles artigo={artigo1} />
-          <Articles artigo={artigo2} />
-          <Articles artigo={artigo3} />
+      <section>
+        <div className="row ">
+          <Card card={card1} />
+          <Card card={card2} />
+          <Card card={card3} />
         </div>
-      </div>
-      <Footer />
+      </section>
+      <Footer/>
     </div>
   );
 }
